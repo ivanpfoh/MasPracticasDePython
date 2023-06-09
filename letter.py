@@ -1,0 +1,5 @@
+print("05/06/2023")
+print("Me siento genial en este momento.")
+print("Quiero construir mi aplicacion.")
+print("Ojala puedas disfrutar la vida trabajando como programador, ojala estes siendo feliz. te quiero")
+print(":)")

@@ -1,0 +1,7 @@
+print("IIIIIII PPPP")
+print("  I     P   P")
+print("  I     P   P")
+print("  I     PPPPP")
+print("  I     P")
+print("  I     P")
+print("IIIIIII P")
