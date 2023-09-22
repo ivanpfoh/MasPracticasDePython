@@ -4,7 +4,6 @@ raiz = Tk()
 raiz.title("Horoscopo")
 
 #raiz.resizable(1, 1)#el primero es width, y el seungo es height de la ventana
-
 raiz.iconbitmap("PracticaInterfazGrafica/logo canal yotube.ico")
 
 #raiz.geometry("650x350")
