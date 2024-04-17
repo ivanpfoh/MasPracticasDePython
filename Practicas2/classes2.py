@@ -29,6 +29,6 @@ class perro():
 
 
 dog = perro()
-
-
-print(dog.energia)
+accion = [""]
+accion[0] = input("Ingrese la accion que del perro: ")
+dog.accion[0]()
