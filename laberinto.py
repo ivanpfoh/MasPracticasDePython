@@ -6,7 +6,7 @@
 
 
 laberinto = [
-    [' ', 'X', 'X', 'X', 'X'], 
+    [':)', 'X', 'X', 'X', 'X'], 
     [' ', 'X', ' ', ' ', ' '],
     [' ', 'X', ' ', 'X', ' '], 
     [' ', ' ', ' ', 'X', ' '], 
@@ -22,15 +22,9 @@ columna = 0
 
 print("BIENVENIDO AL LABERINTO, TE MOVERAS POR EL MISMO DANDO PASOS DE UNO EN UNO, ESTOS SON LOS COMANDO SPARA MOVERTE POR EL LABERINTO: avanzar_arriba,avanzar_abajo,avanzar_izquierda,avanzar_derecha")
 print("Que empiece el juego!")
-print("""[
-    [' ', 'X', 'X', 'X', 'X'],\n
-    [' ', 'X', ' ', ' ', ' '],\n
-    [' ', 'X', ' ', 'X', ' '],\n
-    [' ', ' ', ' ', 'X', ' '],\n
-    ['X', 'X', 'X', 'X', 'S']
-    ]""")
 
-    
+for i in range(len(laberinto)):
+    print(laberinto[i])
 
 def avanzar_abajo():
     global fila
@@ -80,7 +74,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
     
     if posicionEnLaberinto == (0, 0):     
         print("""[
-        ['$', 'X', 'X', 'X', 'X'],\n
+        [':)', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
@@ -89,7 +83,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
     elif posicionEnLaberinto == (1, 0):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
-        ['$', 'X', ' ', ' ', ' '],\n
+        [':)', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
@@ -98,7 +92,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
-        ['$', 'X', ' ', 'X', ' '],\n
+        [':)', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
@@ -107,7 +101,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
-        ['$', ' ', ' ', 'X', ' '],\n
+        [':)', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
     elif posicionEnLaberinto == (3, 1):
@@ -115,7 +109,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
-        [' ', '$', ' ', 'X', ' '],\n
+        [' ', ':)', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
     elif posicionEnLaberinto == (3, 2):
@@ -123,21 +117,21 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', '$', 'X', ' '],\n
+        [' ', ' ', ':)', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
     elif posicionEnLaberinto == (2, 2):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', '$', 'X', ' '],\n
+        [' ', 'X', ':)', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
     elif posicionEnLaberinto == (1, 2):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', '$', ' ', ' '],\n
+        [' ', 'X', ':)', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
@@ -145,7 +139,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
     elif posicionEnLaberinto == (1, 3):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', '$', ' '],\n
+        [' ', 'X', ' ', ':)', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
@@ -153,7 +147,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
     elif posicionEnLaberinto == (1, 4):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', '$'],\n
+        [' ', 'X', ' ', ' ', ':)'],\n
         [' ', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
@@ -162,7 +156,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         print("""[
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', '$'],\n
+        [' ', 'X', ' ', 'X', ':)'],\n
         [' ', ' ', ' ', 'X', ' '],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
@@ -171,7 +165,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         [' ', 'X', 'X', 'X', 'X'],\n
         [' ', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', '$'],\n
+        [' ', ' ', ' ', 'X', ':)'],\n
         ['X', 'X', 'X', 'X', 'S']
         ]""")
     elif posicionEnLaberinto == (3, 4):
@@ -180,7 +174,7 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
         [' ', 'X', ' ', ' ', ' '],\n
         [' ', 'X', ' ', 'X', ' '],\n
         [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', '$']
+        ['X', 'X', 'X', 'X', ':)']
         ]""")
 
 
