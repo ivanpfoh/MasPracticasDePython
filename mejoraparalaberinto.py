@@ -13,6 +13,6 @@ for i in range(len(laberinto)):
 
 
 def posicionEnGrafica(laberinto):
-    laberinto[movimientoUsuario[0], movimientoUsuario[1]] = ":)"
+    laberinto[movimientoUsuario[0]][movimientoUsuario[1]] = ":)"
     for i in range(len(laberinto)):
         print(laberinto[i])

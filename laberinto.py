@@ -6,7 +6,7 @@
 
 
 laberinto = [
-    [':)', 'X', 'X', 'X', 'X'], 
+    ['$', 'X', 'X', 'X', 'X'], 
     [' ', 'X', ' ', ' ', ' '],
     [' ', 'X', ' ', 'X', ' '], 
     [' ', ' ', ' ', 'X', ' '], 
@@ -64,18 +64,23 @@ funciones_permitidas = {
     "avanzar_izquierda": avanzar_izquierda,
     "avanzar_derecha": avanzar_derecha
 }
+try:
+    def posicionEnGrafica(laberinto):
+        laberinto[posicionEnLaberinto[0]][posicionEnLaberinto[1]] = "$"
+        for i in range(len(laberinto)):
+            print(laberinto[i])
+except IndexError:
+    print("Oh no, parece que te topaste un muro, vuelve a intentarlo!")
+    
 
-def posicionEnGrafica(laberinto):
-    laberinto[movimientoUsuario[0], movimientoUsuario[1]] = ":)"
-    for i in range(len(laberinto)):
-        print(laberinto[i])
-        
 while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
 
     movimientoUsuario = input("Ingrese el movimiento que quiere realizar: [avanzar_arriba,avanzar_abajo,avanzar_izquierda,avanzar_derecha] \n")
-    posicionEnGrafica(laberinto)
+    
     if movimientoUsuario in funciones_permitidas:
         funciones_permitidas[movimientoUsuario]()
+        
+    posicionEnGrafica(laberinto)
 
     
 
@@ -83,4 +88,4 @@ while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
 if posicionEnLaberinto == (4,4):
     print("Lograste escapar del laberinto! Felicitaciones!")
 else:
-    print("Oh no! Te has chocado con un muro, vuleve a intentarlo!")
+    print("Oh no! Te has chocado con un muro, vuelve a intentarlo!")
