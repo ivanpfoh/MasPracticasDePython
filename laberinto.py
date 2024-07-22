@@ -65,117 +65,19 @@ funciones_permitidas = {
     "avanzar_derecha": avanzar_derecha
 }
 
+def posicionEnGrafica(laberinto):
+    laberinto[movimientoUsuario[0], movimientoUsuario[1]] = ":)"
+    for i in range(len(laberinto)):
+        print(laberinto[i])
+        
 while (posicionEnLaberinto != (4, 4)) & (posicionEnLaberinto not in muro):
 
     movimientoUsuario = input("Ingrese el movimiento que quiere realizar: [avanzar_arriba,avanzar_abajo,avanzar_izquierda,avanzar_derecha] \n")
-    
+    posicionEnGrafica(laberinto)
     if movimientoUsuario in funciones_permitidas:
         funciones_permitidas[movimientoUsuario]()
+
     
-    if posicionEnLaberinto == (0, 0):     
-        print("""[
-        [':)', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (1, 0):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [':)', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (2, 0):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [':)', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (3, 0):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [':)', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (3, 1):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ':)', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (3, 2):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ':)', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (2, 2):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ':)', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (1, 2):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ':)', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (1, 3):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ':)', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (1, 4):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ':)'],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (2, 4):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ':)'],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (3, 4):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ':)'],\n
-        ['X', 'X', 'X', 'X', 'S']
-        ]""")
-    elif posicionEnLaberinto == (3, 4):
-        print("""[
-        [' ', 'X', 'X', 'X', 'X'],\n
-        [' ', 'X', ' ', ' ', ' '],\n
-        [' ', 'X', ' ', 'X', ' '],\n
-        [' ', ' ', ' ', 'X', ' '],\n
-        ['X', 'X', 'X', 'X', ':)']
-        ]""")
 
 
 if posicionEnLaberinto == (4,4):
