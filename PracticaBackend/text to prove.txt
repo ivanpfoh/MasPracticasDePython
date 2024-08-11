@@ -1,0 +1,4 @@
+hola como andas? Este es un texto para probar el manejo de ficheros
+hola todo bien
+que onda
+lola
