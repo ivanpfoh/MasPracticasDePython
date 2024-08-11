@@ -1,12 +1,12 @@
 import requests
 
-api_key = "7ceb12eb0d07394348e79bad0f0e72395feee482"
+api_key = ""
 
 headers = {
     "Authorization": f"Bearer {api_key}"
 }
 
-url = 'https://developer.marvel.com/'
+url = 'https://pokeapi.co/api/v2/pokemon/ditto'
 data = requests.get(url, headers=headers)
 print(data)
 
